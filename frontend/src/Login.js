@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css'; // Import the CSS file
+import './Login.css';
 
 function Login() {
   const [username, setUsername] = useState('');
@@ -21,7 +21,7 @@ function Login() {
 
       if (data.success) {
         setMessage("Login successful!");
-        navigate('/dashboard'); // Redirect to the dashboard on successful login
+        navigate('/dashboard');
       } else {
         setMessage(data.message);
       }
@@ -34,7 +34,7 @@ function Login() {
     <div
       className="container"
       style={{
-        backgroundImage: `url('/images/background.jpg')`, // Set background image inline
+        backgroundImage: `url('/images/background.jpg')`,
       }}
     >
       <div className="loginBox">
@@ -43,7 +43,19 @@ function Login() {
           alt="DBS Logo"
           className="logo"
         />
-        <h2 className="title">NTU Bank</h2>
+        <h2
+          className="title"
+          dangerouslySetInnerHTML={{
+            __html: `
+              NTU Bank
+              <!-- Developer Note: Hi john heres the login details for testing -->
+              <!-- Admin username: admin -->
+              <!-- Admin password: password -->
+              <!-- Remember to delete it before deploying or i'll put you on a PIP -->
+              <!-- Thx -Adam -->
+            `,
+          }}
+        ></h2>
 
         <input
           type="text"
