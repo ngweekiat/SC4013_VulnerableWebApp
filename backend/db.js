@@ -24,9 +24,9 @@ const db = new sqlite3.Database(':memory:', (err) => {
 
         // Insert sample users with "hashed" passwords
         const sampleUsers = [
-          { sender_account: '12345', sender_login: 'user1', password_hash: 'hash123', birthday: '1990-01-01' },
-          { sender_account: '67890', sender_login: 'user2', password_hash: 'hash456', birthday: '1985-12-12' },
-          { sender_account: '11111', sender_login: 'admin', password_hash: 'adminhash', birthday: '1980-03-15' }
+          { sender_account: '12345', sender_login: 'user1', password_hash: 'JMPWFTD4013', birthday: '1990-01-01' },
+          { sender_account: '67890', sender_login: 'user2', password_hash: 'TD4013SPDLT', birthday: '1985-12-12' },
+          { sender_account: '11111', sender_login: 'admin', password_hash: 'WJDUPSCFTUMFDUVSFS', birthday: '1980-03-15' }
         ];
 
         const insertUser = db.prepare('INSERT INTO users (sender_account, sender_login, password_hash, birthday) VALUES (?, ?, ?, ?)');

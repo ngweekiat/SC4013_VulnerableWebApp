@@ -1,4 +1,3 @@
-// backend/app.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -14,10 +13,12 @@ app.use(bodyParser.json());
 // Import routes
 const loginRoutes = require('./routes/login');
 const transactionRoutes = require('./routes/transactions');
+const chatbotRoutes = require('./routes/chatbot'); // Correct path to chatbot.js
 
 // Mount routes
 app.use('/api', loginRoutes);
 app.use('/api', transactionRoutes);
+app.use('/api', chatbotRoutes); // Mount chatbot routes here
 
 app.listen(PORT, () => {
   console.log(`Backend server running on http://localhost:${PORT}`);

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Dashboard -->
+  <url>
+    <loc>https://localhost:3000//dashboard</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Accounts Routes -->
+  <url>
+    <loc>https://localhost:3000//accounts</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//accounts/checking</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//accounts/savings</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//accounts/credit-card</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//accounts/investments</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Loans Routes -->
+  <url>
+    <loc>https://localhost:3000//loans</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//loans/applications</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Investments Routes -->
+  <url>
+    <loc>https://localhost:3000//investments</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//investments/portfolio</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Beneficiaries Routes -->
+  <url>
+    <loc>https://localhost:3000//beneficiaries</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//beneficiaries/add</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Profile Routes -->
+  <url>
+    <loc>https://localhost:3000//profile</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//profile/edit</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Security and Settings Routes -->
+  <url>
+    <loc>https://localhost:3000//settings</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//settings/account</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//settings/privacy</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+    <!-- Development Route - Do Not Push To Prod -->
+    <url>
+    <loc>https://localhost:3000//developmentchatbot</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.6</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/session/:sessionId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.5</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/request/:requestId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/response/:sessionId/:messageId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.7</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/admin/:adminId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.3</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/logs/:logId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.2</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/commands/:commandId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/version</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.4</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/query-history/:userId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.6</priority>
+    </url>
+
+    <url>
+    <loc>https://localhost:3000//developmentchatbot/errors/:errorId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.3</priority>
+    </url>
+
+  <!-- Help, Support, and Miscellaneous -->
+  <url>
+    <loc>https://localhost:3000//help</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//support</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//terms</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//about</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.4</priority>
+  </url>
+  
+  <!-- Dynamic User Routes -->
+  <url>
+    <loc>https://localhost:3000//user/:userId</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//user/:userId/transactions</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://localhost:3000//user/:userId/loans</loc>
+    <lastmod>2024-11-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
