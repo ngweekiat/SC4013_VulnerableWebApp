@@ -1,0 +1,114 @@
+/* Main container for the chatbot */
+.chatbot-container {
+  width: 1000px;  /* Increased the width to 1000px */
+  max-width: 100%;
+  height: 800px;  /* Increased the height to 800px */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #e6f0ff;  /* Light blue background */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 50px auto;  /* Centering the chatbot with margin */
+}
+
+/* Header with the ChatGPT logo and title */
+.chat-header {
+  background-color: #0078d4;  /* Blue header */
+  color: white;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.chat-logo {
+  width: 60px;  /* Set logo width to 60px */
+  height: 60px;  /* Set logo height to 60px */
+  margin-right: 15px;
+}
+
+.chat-header h2 {
+  font-size: 24px;  /* Larger title */
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Body section where the messages are displayed */
+.chat-body {
+  padding: 25px;
+  flex-grow: 1;
+  overflow-y: auto;
+  max-height: 600px;  /* Adjusted max height for more message visibility */
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  padding: 14px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  max-width: 80%;  /* Adjusted message bubble width */
+  word-wrap: break-word;
+  font-size: 18px;  /* Larger font size for better readability */
+}
+
+.message.user {
+  background-color: #b3d9ff;  /* Light blue for user messages */
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #ffffff;  /* White for bot messages */
+  align-self: flex-start;
+  border: 1px solid #0078d4;  /* Blue border for bot messages */
+}
+
+/* Footer section with input and send button */
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.message-input {
+  width: 80%;  /* Input field takes up 80% width */
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid #0078d4;  /* Blue border for input */
+  font-size: 18px;
+  margin-right: 20px;
+  background-color: #e6f0ff;  /* Light blue input background */
+}
+
+.send-button {
+  background-color: #0078d4;  /* Blue button */
+  color: white;
+  border: none;
+  padding: 16px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;  /* Larger button font size */
+}
+
+.send-button:hover {
+  background-color: #005a9e;  /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .chatbot-container {
+      width: 100%;  /* Full width on smaller screens */
+      height: 700px;  /* Adjusted height for mobile */
+  }
+  .message-input {
+      font-size: 16px;  /* Slightly smaller font on mobile */
+  }
+  .send-button {
+      font-size: 16px;  /* Slightly smaller button on mobile */
+  }
+}
