@@ -58,8 +58,6 @@ Llama.cpp
 <<<<<<< HEAD
 =======
 - Activate the python virtual environment if it is not activated (See instructions above)
-
->>>>>>> bcd93ed1b956cbd82a9119ce34f61ea5391d20c5
 - Copy the /llm folder to the machines that will be running the LLM
 - python llm.py 
 
