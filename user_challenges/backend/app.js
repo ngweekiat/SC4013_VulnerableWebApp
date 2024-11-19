@@ -14,11 +14,14 @@ app.use(bodyParser.json());
 const loginRoutes = require('./routes/login');
 const transactionRoutes = require('./routes/transactions');
 const chatbotRoutes = require('./routes/chatbot'); // Correct path to chatbot.js
+const fileUploadRoutes = require('./routes/file-upload');
 
 // Mount routes
 app.use('/api', loginRoutes);
 app.use('/api', transactionRoutes);
 app.use('/api', chatbotRoutes); // Mount chatbot routes here
+app.use('/api', fileUploadRoutes);
+
 
 app.listen(PORT, () => {
   console.log(`Backend server running on http://localhost:${PORT}`);
