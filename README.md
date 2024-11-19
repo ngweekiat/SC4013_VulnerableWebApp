@@ -55,9 +55,6 @@
 Llama.cpp 
 
 ### Running on multiple machines
-- Edit ```LLM_INSTANCES``` in ```krasnoai/server.py``` to add the IP addresses of the respective machines
-- Activate the python virtual environment if it is not activated (See instructions above)
-
 - Copy the /llm folder to the machines that will be running the LLM
 - python llm.py 
 
