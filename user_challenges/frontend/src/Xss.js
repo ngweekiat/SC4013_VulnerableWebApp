@@ -4,7 +4,6 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SERVER_URL from '../../config';
 import './xss.css'
 const XssPage = () => {
   const [announcements, setAnnouncements] = useState([]);
@@ -42,15 +41,9 @@ const XssPage = () => {
       alert('Only admins can post announcements.');
       return;
     }
-
-    axios.post(`${SERVER_URL}/xss`, { input: newAnnouncement })
-      .then(response => {
-        setAnnouncements([...announcements, newAnnouncement]);
-        setNewAnnouncement('');
-      })
-      .catch(error => {
-        console.error('Error posting announcement:', error);
-      });
+    setAnnouncements([...announcements, newAnnouncement]);
+    setNewAnnouncement('');
+    
   };
 
   return (<>
