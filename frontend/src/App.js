@@ -4,6 +4,8 @@ import Login from './Login';
 import Dashboard from './Dashboard';
 import Transactions from './Transactions';
 import DevelopmentChatbot from './developmentchatbot'; // Import DevelopmentChatbot component
+import FileUploadPage from './FileUpload';
+import XssPage from './Xss';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/transactions" element={<Transactions />} />
           <Route path="/developmentchatbot" element={<DevelopmentChatbot />} /> {/* Add Chatbot route */}
+          <Route path="/xss" element={<XssPage />} />
+          <Route path="/file-upload" element={<FileUploadPage />} />
         </Routes>
       </div>
     </Router>
