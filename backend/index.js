@@ -2,16 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 const cors = require('cors');
+const morgan = require('morgan')
 require('dotenv').config();
 
 const app = express();
 const PORT = 4000;
 
 // Hardcoded credentials for demonstration
-const hardcodedUsername = 'Test1';
+const hardcodedUsername = 'admin';
 const hardcodedPassword = 'password';
 
 app.use(cors());
+app.use(morgan('tiny'))
 app.use(bodyParser.json());
 
 // Function to get userID from CTFd based on the username
