@@ -27,7 +27,14 @@
 - Activate the python virtual environment if it is not activated (See instructions above)
 - For Macbook: source venv/bin/activate 
 - python server.py 
-  
+
+## CTFd Setup
+
+
+
+### Pre-requisites
+
+- Follow the instructions in https://docs.ctfd.io/docs/deployment/installation/
 
 ## LLM Setup
 
@@ -53,13 +60,6 @@
 ### References
 
 Llama.cpp 
-
-### Running on multiple machines
-<<<<<<< HEAD
-=======
-- Activate the python virtual environment if it is not activated (See instructions above)
-- Copy the /llm folder to the machines that will be running the LLM
-- python llm.py 
 
 
 ### `npm start`
